@@ -1,0 +1,41 @@
+폼 객체
+
+<form name="myform" id="regform">
+    <input type="text" name="userid" id="id">
+</form>
+
+폼의 접근
+- const frm = document.myform;
+- const frm = document.getElementById('regform');
+
+<input type="text" name="userid" id="id">의 value 접근
+- const value = document.myform.userid.value;
+- const value = frm.userid.value;
+- const value = frm.elements[0].value;
+- const value = frm.elements['userid'].value;
+- const value = document.getElementById('id').value;
+
+정규 표현식
+- 문자열에 특정 문자 조합과 대응시키기 위해 사용되는 패턴
+
+test()
+- 정규표현식에 대입한 문자열이 부합하면 true, 아니면 false를 반환
+
+    정규표현식객체.test(비교할 문자열) -> true, false
+
+
+과제(github 제출)
+회원가입 양식을 아래 내용 정규표현식으로 체크할 수 있게 변경
+
+1. 비밀번호는 숫자, 대소문자, 특수문자를 꼭 포함해야 합니다.
+
+2. 휴대폰 번호는 -을 빼고 010을 포함, 중간은 3자리 또는 4자리, 마지막은 4자리로 표현
+
+
+
+
+
+
+
+
+
